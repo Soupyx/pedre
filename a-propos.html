@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>À propos — Dumont & Vauban</title>
+  <meta name="description" content="Notre histoire, notre savoir-faire et nos engagements pour une rénovation haut de gamme.">
+  <meta name="keywords" content="plâtres, rénovation luxe, savoir-faire, Hyères, Toulon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            luxe: {50:'#faf8f5',100:'#f3eee6',200:'#e5dccb',300:'#d0c2a8',400:'#b6a382',500:'#9c8868',600:'#7f6d53',700:'#655644',800:'#4b4033',900:'#2f2820'},
+            gold: {400:'#d4af37',500:'#c5a028',600:'#a6841f'}
+          },
+          fontFamily: { sans:['Inter','system-ui','sans-serif'], serif:['Playfair Display','serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-luxe-50 text-luxe-900 font-sans">
+ <header class="bg-white border-b border-luxe-100">
+  <div class="max-w-screen-xxl mx-auto px-28 py-6 grid grid-cols-3 items-center">
+    
+    <!-- Colonne gauche : Logo -->
+    <a href="index.html" class="justify-self-start">
+      <img 
+        src="img/logo.png" 
+        alt="Logo DV Design Dumont & Vauban" 
+        class="h-20 w-auto object-contain drop-shadow-md"
+      >
+    </a>
+
+    <!-- Colonne centre : Nom -->
+    <span class="justify-self-center text-xl italic tracking-wide md:text-4xl font-serif text-luxe-900">
+      DV Design Dumont & Vauban
+    </span>
+
+    <!-- Colonne droite : Navigation -->
+    <nav class="justify-self-end flex items-center gap-10 text-lg">
+      <a href="index.html" class="hover:text-gold-500">Accueil</a>
+      <a href="a-propos.html" class="hover:text-gold-500">À propos</a>
+      <a href="contact.html" class="font-semibold hover:text-gold-500">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+  <main>
+    <section class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h1 class="font-serif text-4xl">L’exigence du beau, la maîtrise du détail</h1>
+        <p class="mt-4 text-luxe-700">Présents depuis de longues années sur le marché, nous avons livré de nombreux chantiers haut de gamme avec un niveau d’exigence rare. Notre savoir-faire en plâtres décoratifs et en rénovation d’intérieur se reflète dans la précision de chaque finition.</p>
+      </div>
+    </section>
+
+    <section class="py-12 bg-luxe-50">
+      <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+        <div class="bg-white border border-luxe-100 rounded-xl p-6">
+          <h3 class="font-semibold">Savoir-faire artisanal</h3>
+          <p class="mt-2 text-luxe-700">Moulures, corniches, rosaces et enduits maîtrisés pour un rendu noblesse.</p>
+        </div>
+        <div class="bg-white border border-luxe-100 rounded-xl p-6">
+          <h3 class="font-semibold">Réalisations à succès</h3>
+          <p class="mt-2 text-luxe-700">Plusieurs chantiers livrés dans les temps, avec satisfaction des clients exigeants.</p>
+        </div>
+        <div class="bg-white border border-luxe-100 rounded-xl p-6">
+          <h3 class="font-semibold">Approche design</h3>
+          <p class="mt-2 text-luxe-700">Conseil esthétique, choix des textures et harmonies pour des intérieurs intemporels.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="font-serif text-3xl">Notre zone géographique</h2>
+        <p class="mt-3 text-luxe-700">Nous intervenons du Lavandou jusqu’à Toulon compris : Le Lavandou, La Londe, Hyères, Le Pradet, Carqueiranne.</p>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="font-serif text-3xl">Engagements</h2>
+        <ul class="mt-4 space-y-3">
+          <li>Qualité irréprochable et finitions haut de gamme.</li>
+          <li>Transparence des coûts et devis gratuits (hors dégâts des eaux).</li>
+          <li>Respect des délais et discrétion chez nos clients.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-luxe-900 text-luxe-50 mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-8 flex items-center justify-between">
+      <span>© Dumont & Vauban</span>
+      <nav class="flex gap-6">
+        <a href="index.html" class="hover:text-white">Accueil</a>
+        <a href="contact.html" class="hover:text-white">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Dumont & Vauban</title>
+  <meta name="description"
+    content="Demandez votre devis gratuit (hors dégâts des eaux). Intervention du Lavandou à Toulon.">
+  <meta name="keywords" content="devis gratuit, rénovation luxe, Hyères, Toulon, plâtres, contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            luxe: { 50: '#faf8f5', 100: '#f3eee6', 200: '#e5dccb', 300: '#d0c2a8', 400: '#b6a382', 500: '#9c8868', 600: '#7f6d53', 700: '#655644', 800: '#4b4033', 900: '#2f2820' },
+            gold: { 400: '#d4af37', 500: '#c5a028', 600: '#a6841f' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], serif: ['Playfair Display', 'serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-luxe-50 text-luxe-900 font-sans">
+  <header class="bg-white border-b border-luxe-100">
+    <div class="max-w-screen-xxl mx-auto px-28 py-6 grid grid-cols-3 items-center">
+      <a href="index.html" class="justify-self-start">
+        <img src="img/logo.png" alt="Logo DV Design Dumont & Vauban" class="h-20 w-auto object-contain drop-shadow-md">
+      </a>
+      <span class="justify-self-center text-xl italic tracking-wide md:text-4xl font-serif text-luxe-900">
+        DV Design Dumont & Vauban
+      </span>
+      <nav class="justify-self-end flex items-center gap-10 text-lg">
+        <a href="index.html" class="hover:text-gold-500">Accueil</a>
+        <a href="a-propos.html" class="hover:text-gold-500">À propos</a>
+        <a href="contact.html" class="font-semibold hover:text-gold-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-16">
+      <div class="max-w-5xl mx-auto px-4">
+        <h1 class="font-serif text-4xl">Contact & devis</h1>
+        <p class="mt-4 text-luxe-700">Devis gratuit (hors dégâts des eaux). Détaillez votre projet, nous revenons vers
+          vous rapidement.</p>
+
+        <div class="mt-8 grid md:grid-cols-1 gap-8">
+          <!-- Formulaire AJAX -->
+          <form id="contactForm" class="bg-white border border-luxe-100 rounded-xl p-6 space-y-5">
+            <div>
+              <label class="block text-sm font-semibold">Nom complet</label>
+              <input type="text" name="nom" required
+                class="mt-2 w-full rounded-lg border border-luxe-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                placeholder="Ex: Jeanne Dupont">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-sm font-semibold">Email</label>
+                <input type="email" name="email" required
+                  class="mt-2 w-full rounded-lg border border-luxe-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                  placeholder="Ex: jeanne@exemple.com">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold">Téléphone</label>
+                <input type="tel" name="tel"
+                  class="mt-2 w-full rounded-lg border border-luxe-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                  placeholder="Ex: 06 12 34 56 78">
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold">Localisation du projet</label>
+              <select name="localisation"
+                class="mt-2 w-full rounded-lg border border-luxe-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500">
+                <option>Hyères</option>
+                <option>Le Lavandou</option>
+                <option>La Londe</option>
+                <option>Le Pradet</option>
+                <option>Carqueiranne</option>
+                <option>Toulon</option>
+                <option>Autre (proche)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold">Message</label>
+              <textarea name="message" rows="5"
+                class="mt-2 w-full rounded-lg border border-luxe-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                placeholder="Décrivez vos besoins, délais, budget..."></textarea>
+            </div>
+            <button type="submit"
+              class="w-full rounded-lg px-5 py-3 bg-gold-500 text-white hover:bg-gold-600 transition">Envoyer la
+              demande</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-luxe-900 text-luxe-50">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="font-serif text-lg">Dumont & Vauban</h4>
+        <p class="mt-2 text-luxe-200">
+          Rénovation d’intérieur luxe & plâtres décoratifs — Côte d’Azur.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-serif text-lg">Zones</h4>
+        <p class="mt-2 text-luxe-200">
+          Le Lavandou, La Londe, Hyères, Le Pradet, Carqueiranne, Toulon.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-serif text-lg">Devis</h4>
+        <p class="mt-2 text-luxe-200">
+          Gratuit (hors dégâts des eaux). Réponse rapide.
+        </p>
+        <a href="contact.html"
+          class="mt-4 inline-block px-5 py-2 rounded bg-white text-luxe-900 hover:bg-luxe-100 transition">Contact</a>
+      </div>
+    </div>
+
+    <div class="border-t border-luxe-800">
+      <div class="max-w-7xl mx-auto px-4 py-6 text-sm text-luxe-300 flex items-center justify-between">
+        <span>© Dumont & Vauban — Tous droits réservés</span>
+        <nav class="flex gap-6">
+          <a href="a-propos.html" class="hover:text-white">À propos</a>
+          <a href="contact.html" class="hover:text-white">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast container -->
+  <div id="toast" class="fixed top-5 right-5 hidden px-6 py-4 rounded-lg shadow-lg text-white font-semibold"></div>
+
+  <!-- Script AJAX + Toast -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+
+      fetch("send.php", {
+        method: "POST",
+        body: formData
+      })
+        .then(response => response.text())
+        .then(data => {
+          showToast("Votre message a bien été envoyé ✅", "bg-green-600");
+          this.reset();
+        })
+        .catch(error => {
+          showToast("Erreur lors de l'envoi ❌", "bg-red-600");
+        });
+    });
+
+    function showToast(message, colorClass) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.className = `fixed top-5 right-5 px-6 py-4 rounded-lg shadow-lg text-white font-semibold ${colorClass}`;
+      toast.style.display = "block";
+
+      // Disparaît automatiquement après 4 secondes
+      setTimeout(() => {
+        toast.style.display = "none";
+      }, 4000);
+    }
+  </script>
+
+</body>
+
+</html>
