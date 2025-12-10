@@ -64,55 +64,50 @@
 </head>
 
 <body class="bg-luxe-50 text-luxe-900 font-sans">
-  <header class="bg-white border-b border-luxe-100">
-    <div class="max-w-screen-xxl mx-auto px-28 py-6 grid grid-cols-3 items-center">
 
-      <a href="index.html" class="justify-self-start">
-        <img src="img/logo.png" alt="Logo DV Design Dumont & Vauban"
-          class="h-[6.5rem] w-auto object-contain drop-shadow-md" />
-      </a>
-
-      <span class="justify-self-center text-xl italic tracking-wide md:text-4xl font-serif text-luxe-900">
-        DV Design Dumont & Vauban
-      </span>
-
-      <nav class="justify-self-end flex items-center gap-10 text-lg">
-        <a href="index.html" class="hover:text-gold-500">Accueil</a>
-        <a href="a-propos.html" class="hover:text-gold-500">À propos</a>
-        <a href="contact.html" class="font-semibold hover:text-gold-500">Contact</a>
-      </nav>
-
-    </div>
-  </header>
+  <?php include 'header.php'; ?>
 
   <!-- HERO -->
   <section class="relative">
+    <!-- Image de fond -->
     <div class="absolute inset-0">
-      <img src="img/img site 1.jpg" alt="Intérieur luxe rénové" class="w-full h-[70vh] object-cover" />
+      <img src="img/img site 1.jpg" alt="Intérieur luxe rénové"
+        class="w-full h-[70vh] md:h-[80vh] lg:h-screen object-cover" />
       <div class="absolute inset-0 bg-black/40"></div>
     </div>
 
-    <div class="relative max-w-7xl mx-auto px-4 h-[70vh] flex items-center">
-      <div class="text-white max-w-2xl">
-        <h1 class="font-serif text-4xl md:text-5xl leading-tight">
-          Rénovation d’intérieur haut de gamme, plâtres & design
+    <!-- Contenu -->
+    <div class="relative max-w-7xl mx-auto px-4 h-[70vh] md:h-[80vh] lg:h-screen flex items-center">
+      <div class="text-white max-w-2xl sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
+
+        <!-- Titre -->
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+          Rénovation d’intérieur haut de gamme,<br class="hidden sm:block"> plâtres & design
         </h1>
-        <p class="mt-4 text-lg md:text-xl">
-          Finitions impeccables, détails sur-mesure, matériaux nobles. Pour
-          clients exigeants sur la Côte d’Azur.
+
+        <!-- Paragraphe -->
+        <p class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+          Finitions impeccables, détails sur-mesure, matériaux nobles.<br class="hidden md:block">
+          Pour clients exigeants sur la Côte d’Azur.
         </p>
-        <div class="mt-6 flex gap-3">
+
+        <!-- Boutons -->
+        <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-6">
           <a href="contact.html"
-            class="px-6 py-3 rounded-full bg-gold-500 text-white hover:bg-gold-600 transition shadow">Demander un
-            devis</a>
+            class="px-6 py-3 rounded-full bg-gold-500 text-white hover:bg-gold-600 transition shadow text-center">
+            Demander un devis
+          </a>
 
           <a href="a-propos.html"
-            class="px-6 py-3 rounded-full bg-white/10 backdrop-blur border border-white/30 text-white hover:bg-white/20 transition">Voir
-            nos atouts</a>
+            class="px-6 py-3 rounded-full bg-white/10 backdrop-blur border border-white/30 
+                  text-white hover:bg-white/20 transition text-center">
+            Voir nos atouts
+          </a>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- QUI SOMMES-NOUS -->
   <section class="py-20 bg-white">
@@ -227,42 +222,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-luxe-900 text-luxe-50">
-    <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8">
-      <div>
-        <h4 class="font-serif text-lg">Dumont & Vauban</h4>
-        <p class="mt-2 text-luxe-200">
-          Rénovation d’intérieur luxe & plâtres décoratifs — Côte d’Azur.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="font-serif text-lg">Zones</h4>
-        <p class="mt-2 text-luxe-200">
-          Le Lavandou, La Londe, Hyères, Le Pradet, Carqueiranne, Toulon.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="font-serif text-lg">Devis</h4>
-        <p class="mt-2 text-luxe-200">
-          Gratuit (hors dégâts des eaux). Réponse rapide.
-        </p>
-        <a href="contact.html"
-          class="mt-4 inline-block px-5 py-2 rounded bg-white text-luxe-900 hover:bg-luxe-100 transition">Contact</a>
-      </div>
-    </div>
-
-    <div class="border-t border-luxe-800">
-      <div class="max-w-7xl mx-auto px-4 py-6 text-sm text-luxe-300 flex items-center justify-between">
-        <span>© Dumont & Vauban — Tous droits réservés</span>
-        <nav class="flex gap-6">
-          <a href="a-propos.html" class="hover:text-white">À propos</a>
-          <a href="contact.html" class="hover:text-white">Contact</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
+  <?php include 'footer.php'; ?>
 
 </body>
 
